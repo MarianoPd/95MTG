@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveSassCompile.settings.formats": [
+			{
+					"format": "expanded",
+					"extensionName": ".css"
+			}
+		],
+		"liveSassCompile.settings.excludeList": [
+				
+		],
+		"liveSassCompile.settings.includeItems": [
+				"./style/main.scss",
+		],
+		"liveSassCompile.settings.generateMap": false,
+		"liveSassCompile.settings.showOutputWindow": true
+	}
+}

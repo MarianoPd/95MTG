@@ -1,0 +1,26 @@
+
+.coso{
+
+}
+
+.ubiquitous-container{
+    max-width: 1140px;
+    padding: 0 15px;
+    height: 100%;
+    margin: 0 auto;
+} 
+
+.btn{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 10px 16px;
+    &--secondary{
+        background-color: $secondary-color;
+    }
+}
+
+
+
