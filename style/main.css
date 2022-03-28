@@ -23,6 +23,18 @@ ul li {
   display: inline-block;
 }
 
+button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .ubiquitous-container {
   max-width: 1140px;
   padding: 0 15px;
@@ -311,6 +323,10 @@ main .jumbotron {
   }
 }
 
+main .jumbotron--no-mb {
+  margin-bottom: 0;
+}
+
 main .jumbotron .jumbotron__background {
   width: 100%;
   min-height: 390px;
@@ -507,12 +523,7 @@ main .main-container .segment .join > *:last-child {
 main .main-container .product-card {
   min-width: 255px;
   margin-right: 30px;
-  position: relative;
   border-radius: 2px;
-}
-
-main .main-container .product-card:last-of-type {
-  margin-right: 0;
 }
 
 main .main-container .product-card:hover {
@@ -1414,6 +1425,62 @@ main .main-container .detail-info .detail-info__data p:last-of-type {
   opacity: 0.6;
 }
 
+main .main-container .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1110px;
+  margin-right: -30px;
+  margin-top: 100px;
+}
+
+main .main-container .account > * {
+  width: 50%;
+  padding-right: 30px;
+}
+
+main .main-container .account__info .account__user {
+  height: 130px;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #22262E;
+}
+
+main .main-container .account__info .account__form {
+  padding: 30px;
+  height: calc(100% - 130px);
+  background: #313439;
+}
+
+main .main-container .account__data > * {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 0 30px;
+  height: 130px;
+  background-color: #22262E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main-container .account__data > *:last-of-type {
+  margin: 0;
+}
+
 .paginator {
   width: 100%;
   padding-top: 30px;
@@ -1702,4 +1769,113 @@ footer .footer-body .footer-body__bottom .footer-body__socials {
   footer .footer-body .footer-body__bottom .footer-body__socials {
     margin-bottom: 52px;
   }
+}
+
+.modale {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.modale--active {
+  display: unset;
+}
+
+.modale__content {
+  width: 540px;
+  background: white;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 16px;
+  border-radius: 2px;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion__part {
+  padding: 30px 60px;
+  width: 100%;
+  background: #22262E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  cursor: pointer;
+}
+
+.accordion .accordion__fold {
+  padding: 0 60px;
+  width: 100%;
+  margin-bottom: 25px;
+  overflow: hidden;
+  max-height: 100px;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out;
+  display: block;
+  background: #313439;
+}
+
+.accordion .accordion__fold--folded {
+  max-height: 0;
+}
+
+.accordion .accordion__fold p {
+  margin: 30px 0;
+}
+
+.carousel {
+  width: 1200px;
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+  padding-bottom: 3px;
+}
+
+.carousel__slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.carousel__slider--slide {
+  left: -100%;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+.carousel__slider--fast-slide {
+  left: -100%;
+}
+
+.carousel__slider .carousel__object {
+  padding: 2px 30px 2px 2px;
+  width: calc(100% / 12);
+  float: left;
+}
+
+.carousel__slider .carousel__object > * {
+  display: block;
+  min-width: 0 !important;
+  width: calc((1110px - 100px)/4);
+  margin: 0 !important;
 }
