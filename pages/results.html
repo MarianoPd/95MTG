@@ -33,6 +33,9 @@
                     <div class="top-header__sign-in">
                         <p>Hello, Sign in</p>
                         <a href="#">Account <i class="fa-solid fa-caret-down"></i></a>
+                        <span class="material-icons">
+                            menu
+                            </span>
                     </div>
                     <div class="top-header__shopping-cart">
                         <a href="#">
@@ -63,7 +66,9 @@
         <div class="main-container">
             <div class="ubiquitous-container ubiquitous-container--no-padding">
                 <section class="jumbotron">
-                    <img src="../img/backgrounds/Rectangle (1).png" alt="jumbotron background" class="jumbotron__background">
+                    <div class="jumbotron__background">
+                        <img src="../img/backgrounds/Rectangle (1).png" alt="jumbotron background" >
+                    </div>
                     <div class="jumbotron__body">
                         <div class="ubiquitous-container">
                             <div class="jumbotron__text jumbotron__text--no-flex">
@@ -82,719 +87,1212 @@
                     
                 </section>
             </div>
-            <div class="ubiquitous-container">
-                <div class="search">
-                    <div class="search__search-block">
+            
+            <div class="search">
+                <div class="search-block">
+                    <div class="search-block__top">
+                        <p>1500 results found</p>
 
+                        <div class="search-block__views">
+                            <span class="material-icons search-block__view search-block__view--selected">
+                                view_module
+                                </span>
+                            
+                            <span class="material-icons search-block__view">
+                                view_list
+                                </span>    
+                        </div>
+                        <div class="search-block__filter">
+                            <span class="material-icons">
+                                filter_list
+                                </span>
+                        </div>
                     </div>
+                    <form class="search-block__body">
+                        <div class="search-block__parameter">
+                            <label>order by</label>
+                            <select name="price" id="price">
+                                <option value="" selected> Price ( increasing )</option>
+                            </select>
+                        </div>
+                        <div class="search-block__parameter">
+                            <label>categories</label>
+                            <select name="price" id="price">
+                                <option value="" selected> All categories</option>
+                            </select>
+                        </div>
+                        <div class="search-block__parameter">
+                            <label>expansion</label>
+                            <select name="price" id="price">
+                                <option value="" selected> All expansion</option>
+                            </select>
+                        </div>
+                        <div class="search-block__parameter">
+                            <label>price</label>
+                            <input type="range" min="5" max="350" class="search-block__range">
+                            <p class="search-block__ranges">
+                                <span>5$</span>
+                                <span>350$</span>
+                            </p>
+                            
+                        </div>
+                        <div class="search-block__parameter">
+                            <label>languages</label>
+                            <div class="search-block__checkbox">
+                                <input type="checkbox" id="it">
+                                <label for="it">ITA</label>
+                            </div>
+                            <div class="search-block__checkbox">
+                                <input type="checkbox" id="it">
+                                <label for="it">eng</label>
+                            </div>
+                            <div class="search-block__checkbox">
+                                <input type="checkbox" id="it">
+                                <label for="it">jap</label>
+                            </div>
+                                
+                            
+                        </div>
+                        <button class="btn btn--secondary btn--form">
+                            clear all
+                        </button>
+                    </form>
+                </div>
+                
                 <div class="search__results">
                     <div class="product-card">
 
-                            <div class="product-card__picture">
-                                <img src="../img/products/Rectangle 2.21.png" alt="product">
-                            </div>
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
 
-                            <div class="product-card__description">
-                                <p>Gideon Blackblade: war of the spark (ENG)</p>
-                                <span>cards</span>
-                            </div>
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
 
-                            <div class="product-card__bottom">
-                                <div class="product-card__icons">
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
 
-                                    <div class="product-card__icon product-card__icon--active">
-                                        <span class="material-icons">
-                                            favorite_border
-                                            </span>
-                                        <span class="material-icons">
-                                            favorite
-                                            </span>
-                                            
-                                    </div>
-                                    <div class="product-card__icon product-card__icon--active">
-                                        <span class="material-icons">
-                                            check_circle_outline
-                                        </span>                       
-                                        <span class="material-icons">
-                                            check_circle
-                                        </span>                       
-                                                            
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
                                         
-                                            
-                                    </div>
                                 </div>
-                               <div class="product-card__price">
-                                   <p>20,15 $</p>
-                                   <p>14,15 $</p>
-                               </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
                             </div>
                         </div>
-                        <div class="product-card">
+                    </div>
+                    <div class="product-card">
 
-                            <div class="product-card__picture">
-                                <img src="../img/products/Rectangle 2.21.png" alt="product">
-                            </div>
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
 
-                            <div class="product-card__description">
-                                <p>Gideon Blackblade: war of the spark (ENG)</p>
-                                <span>cards</span>
-                            </div>
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
 
-                            <div class="product-card__bottom">
-                                <div class="product-card__icons">
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
 
-                                    <div class="product-card__icon product-card__icon--active">
-                                        <span class="material-icons">
-                                            favorite_border
-                                            </span>
-                                        <span class="material-icons">
-                                            favorite
-                                            </span>
-                                            
-                                    </div>
-                                    <div class="product-card__icon product-card__icon--active">
-                                        <span class="material-icons">
-                                            check_circle_outline
-                                        </span>                       
-                                        <span class="material-icons">
-                                            check_circle
-                                        </span>                       
-                                                            
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
                                         
-                                            
-                                    </div>
                                 </div>
-                               <div class="product-card__price">
-                                   <p>20,15 $</p>
-                                   <p>14,15 $</p>
-                               </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
                             </div>
                         </div>
-                        <div class="product-card">
+                    </div>
+                    <div class="product-card">
 
-                            <div class="product-card__picture">
-                                <img src="../img/products/Rectangle 2.21.png" alt="product">
-                            </div>
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
 
-                            <div class="product-card__description">
-                                <p>Gideon Blackblade: war of the spark (ENG)</p>
-                                <span>cards</span>
-                            </div>
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
 
-                            <div class="product-card__bottom">
-                                <div class="product-card__icons">
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
 
-                                    <div class="product-card__icon product-card__icon--active">
-                                        <span class="material-icons">
-                                            favorite_border
-                                            </span>
-                                        <span class="material-icons">
-                                            favorite
-                                            </span>
-                                            
-                                    </div>
-                                    <div class="product-card__icon product-card__icon--active">
-                                        <span class="material-icons">
-                                            check_circle_outline
-                                        </span>                       
-                                        <span class="material-icons">
-                                            check_circle
-                                        </span>                       
-                                                            
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
                                         
-                                            
-                                    </div>
                                 </div>
-                               <div class="product-card__price">
-                                   <p>20,15 $</p>
-                                   <p>14,15 $</p>
-                               </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+
+                        <div class="product-card__picture">
+                            <img src="../img/products/Rectangle 2.21.png" alt="product">
+                        </div>
+
+                        <div class="product-card__description">
+                            <p>Gideon Blackblade: war of the spark (ENG)</p>
+                            <span>cards</span>
+                        </div>
+
+                        <div class="product-card__bottom">
+                            <div class="product-card__icons">
+
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        favorite_border
+                                        </span>
+                                    <span class="material-icons">
+                                        favorite
+                                        </span>
+                                        
+                                </div>
+                                <div class="product-card__icon product-card__icon--active">
+                                    <span class="material-icons">
+                                        check_circle_outline
+                                    </span>                       
+                                    <span class="material-icons">
+                                        check_circle
+                                    </span>                       
+                                                        
+                                    
+                                        
+                                </div>
+                            </div>
+                            <div class="product-card__price">
+                                <p>20,15 $</p>
+                                <p>14,15 $</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
 
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-
-                        <div class="product-card__picture">
-                            <img src="../img/products/Rectangle 2.21.png" alt="product">
-                        </div>
-
-                        <div class="product-card__description">
-                            <p>Gideon Blackblade: war of the spark (ENG)</p>
-                            <span>cards</span>
-                        </div>
-
-                        <div class="product-card__bottom">
-                            <div class="product-card__icons">
-
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        favorite_border
-                                        </span>
-                                    <span class="material-icons">
-                                        favorite
-                                        </span>
-                                        
-                                </div>
-                                <div class="product-card__icon product-card__icon--active">
-                                    <span class="material-icons">
-                                        check_circle_outline
-                                    </span>                       
-                                    <span class="material-icons">
-                                        check_circle
-                                    </span>                       
-                                                        
-                                    
-                                        
-                                </div>
-                            </div>
-                            <div class="product-card__price">
-                                <p>20,15 $</p>
-                                <p>14,15 $</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="paginator-big">
+                <a class="paginator-big__prev" href="#">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    prev
+                </a>
+                <div class="paginator-big__pages">
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">99</a></li>
+                        
+                    </ul>
                 </div>
+                <a class="paginator-big__next" href="#">
+                    next
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
             </div>
             
     </main>

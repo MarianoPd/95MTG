@@ -11,6 +11,7 @@
 
     &--no-padding{
         padding: 0;
+        max-width: 1440px;
     }
 } 
 
@@ -21,10 +22,23 @@
     font-size: 14px;
     border-radius: 2px;
     padding: 10px 16px;
+    border: 0;
+    color: white;
     &--secondary{
         background-color: $secondary-color;
     }
+
+    &--form{
+        width: 100%;
+        border: 0;
+        color: white;
+    }
+
+    &--wide{
+        padding: 10px 35px;
+    }
 }
+
 
 
 
